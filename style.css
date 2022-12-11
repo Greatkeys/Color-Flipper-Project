@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #F1F5F8;
+    z-index: -1;
+}
+nav{
+    overflow: auto;
+    background-color: #F1F5F8;
+    display: flex;
+    font-size: 1.2rem;
+    z-index: 1000;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-around;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3),
+    0px -10px 40px rgba(0, 0, 0, 0.3);
+}
+nav .nav-center{
+    text-transform: capitalize;
+    color: blue;
+}
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+nav ul li{
+    text-transform: capitalize;
+}
+nav ul a{
+    text-decoration: none;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+nav ul a:active{
+    color: red;
+}
+.container{ 
+    display: flex;
+    overflow-x: hidden;
+    height: 45rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+main .container .main-content{
+    background-color: rgb(14, 13, 13);
+    color: #fff;
+    max-width: 30rem;
+    margin: 0 50px;
+    padding: 1rem 1rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    border-radius: 10px;
+}
+main .container .main-content h2{
+}
+main .container button{
+    margin-top: 2rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border: 1px solid rgb(14, 13, 13);
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 335px){
+    main .container h2{
+    margin: 0 100px;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.8;
+    }   
+}
